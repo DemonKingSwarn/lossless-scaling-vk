@@ -1,0 +1,21 @@
+{
+  "file_format_version": "1.0.0",
+  "layer": {
+    "name": "VK_LAYER_LS_lossless_scaling",
+    "type": "GLOBAL",
+    "api_version": "1.4.313",
+    "library_path": "liblossless_scaling.so",
+    "implementation_version": "1",
+    "description": "Lossless Scaling using NVIDIA Image Scaling",
+    "functions": {
+      "vkGetInstanceProcAddr": "LosslessScaling_GetInstanceProcAddr",
+      "vkGetDeviceProcAddr": "LosslessScaling_GetDeviceProcAddr"
+    },
+    "disable_environment": {
+      "LOSSLESS_SCALING": "0"
+    },
+    "enable_environment": {
+      "LOSSLESS_SCALING": "1"
+    }
+  }
+}
