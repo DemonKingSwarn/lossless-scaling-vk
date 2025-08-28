@@ -682,7 +682,7 @@ VKAPI_ATTR VkResult VKAPI_CALL LosslessScaling_CreateSwapchainKHR(VkDevice devic
         dt->CreatePipelineLayout(device, &pipeline_layout_info, nullptr, &data->pipeline_layout);
 
         // Create Compute Pipeline
-        VkShaderModule compute_shader_module = create_shader_module(device, _home_swarn_dox_code_LS_lossless_scaling_build_nis_main_spv, _home_swarn_dox_code_LS_lossless_scaling_build_nis_main_spv_len);
+        VkShaderModule compute_shader_module = create_shader_module(device, nis_shader_spirv, nis_shader_spirv_len);
 
         VkPipelineShaderStageCreateInfo shader_stage_info = {};
         shader_stage_info.sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
