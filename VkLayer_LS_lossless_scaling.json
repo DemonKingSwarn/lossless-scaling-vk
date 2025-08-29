@@ -6,16 +6,13 @@
     "api_version": "1.4.313",
     "library_path": "liblossless_scaling.so",
     "implementation_version": "1",
-    "description": "Lossless Scaling using NVIDIA Image Scaling",
+    "description": "Lossless Scaling using NVIDIA Image Scaling and Snapdragon Game Super Resolution",
     "functions": {
       "vkGetInstanceProcAddr": "LosslessScaling_GetInstanceProcAddr",
       "vkGetDeviceProcAddr": "LosslessScaling_GetDeviceProcAddr"
     },
     "disable_environment": {
-      "LOSSLESS_SCALING": "0"
-    },
-    "enable_environment": {
-      "LOSSLESS_SCALING": "1"
+      "DISABLE_LS": "1"
     }
   }
 }
