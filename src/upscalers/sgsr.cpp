@@ -294,7 +294,7 @@ void upscale(SwapchainData* data, uint32_t image_index, VkQueue queue) {
         // TODO: Get camera data from application
         params.cameraFovAngleHor = 1.5708f;
         params.cameraNear = 0.1f;
-        params.reset = 0;
+        params.reset = 1;
 
         void* mapped_data;
         dt->MapMemory(data->device, sgsr_data->params_buffer_memory, 0, sizeof(Params), 0, &mapped_data);
